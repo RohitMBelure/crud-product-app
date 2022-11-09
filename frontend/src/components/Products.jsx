@@ -18,7 +18,7 @@ export const Products = () => {
   }, []);
 
   const getData = () => {
-    fetch("http://localhost:8000/products", {
+    fetch("https://product-crud-app.onrender.com/products", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -33,7 +33,7 @@ export const Products = () => {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:8000/products/delete/${id}`, {
+    fetch(`https://product-crud-app.onrender.com/products/delete/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,

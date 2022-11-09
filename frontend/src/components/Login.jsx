@@ -12,7 +12,7 @@ export const Login = () => {
       password,
     };
 
-    fetch("http://localhost:8000/user/login", {
+    fetch("https://product-crud-app.onrender.com/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

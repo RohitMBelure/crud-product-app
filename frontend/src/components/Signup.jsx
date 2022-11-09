@@ -14,7 +14,7 @@ export const Signup = () => {
       password,
     };
 
-    fetch("http://localhost:8000/user/signup", {
+    fetch("https://product-crud-app.onrender.com/user/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

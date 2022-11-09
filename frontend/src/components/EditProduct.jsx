@@ -19,7 +19,7 @@ export const EditProduct = () => {
   }, [id]);
 
   const getData = () => {
-    fetch(`http://localhost:8000/products`, {
+    fetch(`https://product-crud-app.onrender.com/products`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -35,7 +35,7 @@ export const EditProduct = () => {
   };
 
   const handleUpdate = () => {
-    fetch(`http://localhost:8000/products/update/${id}`, {
+    fetch(`https://product-crud-app.onrender.com/products/update/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
